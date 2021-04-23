@@ -68,30 +68,6 @@ while True:
       cv2.rectangle(img, (20, 225), (170, 425), (0, 255, 0), cv2.FILLED)
       cv2.putText(img, str('6'), (45, 375), cv2.FONT_HERSHEY_PLAIN, 10, (255, 0, 0), 25)
 
-    '''# 7
-    if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1] and lmList[tipIds[1]][2]<lmList[tipIds[1]-2][2] and lmList[tipIds[2]][2]>lmList[tipIds[2]-2][2] and lmList[tipIds[3]][2]>lmList[tipIds[3]-2][2] and lmList[tipIds[4]][2]>lmList[tipIds[4]-2][2]:
-      img[0:200, 0:200] = overlayList[6]
-      cv2.rectangle(img, (20, 225), (170, 425), (0, 255, 0), cv2.FILLED)
-      cv2.putText(img, str('e'), (45, 375), cv2.FONT_HERSHEY_PLAIN, 10, (255, 0, 0), 25)
-
-    # 8
-    if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1] and lmList[tipIds[1]][2]<lmList[tipIds[1]-2][2] and lmList[tipIds[2]][2]<lmList[tipIds[2]-2][2] and lmList[tipIds[3]][2]>lmList[tipIds[3]-2][2] and lmList[tipIds[4]][2]>lmList[tipIds[4]-2][2]:
-      img[0:200, 0:200] = overlayList[7]
-      cv2.rectangle(img, (20, 225), (170, 425), (0, 255, 0), cv2.FILLED)
-      cv2.putText(img, str('e'), (45, 375), cv2.FONT_HERSHEY_PLAIN, 10, (255, 0, 0), 25)
-
-    # 9
-    if lmList[tipIds[0]][1] > lmList[tipIds[0] - 1][1] and lmList[tipIds[1]][2]<lmList[tipIds[1]-2][2] and lmList[tipIds[2]][2]<lmList[tipIds[2]-2][2] and lmList[tipIds[3]][2]<lmList[tipIds[3]-2][2] and lmList[tipIds[4]][2]>lmList[tipIds[4]-2][2]:
-      img[0:200, 0:200] = overlayList[8]
-      cv2.rectangle(img, (20, 225), (170, 425), (0, 255, 0), cv2.FILLED)
-      cv2.putText(img, str('e'), (45, 375), cv2.FONT_HERSHEY_PLAIN, 10, (255, 0, 0), 25)
-
-    # 10
-    if lmList[tipIds[0]][1] < lmList[tipIds[0] - 1][1] and lmList[tipIds[1]][2]>lmList[tipIds[1]-2][2] and lmList[tipIds[2]][2]>lmList[tipIds[2]-2][2] and lmList[tipIds[3]][2]>lmList[tipIds[3]-2][2] and lmList[tipIds[4]][2]>lmList[tipIds[4]-2][2]:
-      img[0:200, 0:200] = overlayList[9]
-      cv2.rectangle(img, (20, 225), (170, 425), (0, 255, 0), cv2.FILLED)
-      cv2.putText(img, str('e'), (45, 375), cv2.FONT_HERSHEY_PLAIN, 10, (255, 0, 0), 25)'''
-
   cTime=time.time()
   fps=1/(cTime-pTime)
   pTime=cTime
